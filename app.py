@@ -41,4 +41,5 @@ with tab1:
 
 with tab2:
     st.subheader("매매 내역 분석")
+
     st.dataframe(df, use_container_width=True)
