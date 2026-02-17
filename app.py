@@ -4,7 +4,7 @@ from datetime import datetime
 
 # 구글 시트 주소 (공유 링크 붙여넣기)
 # 예: https://docs.google.com/spreadsheets/d/시트ID/edit?usp=sharing
-SHEET_URL = "여기에_복사한_구글시트_주소를_넣으세요"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/1r6t0szBZbrOf30CTjQLeGcs-ZX3R1qhDapsvJXbkg-Y/edit?gid=0#gid=0"
 CSV_URL = SHEET_URL.replace("/edit?usp=sharing", "/export?format=csv")
 
 st.set_page_config(page_title="주식 매매 엔진", layout="wide")
@@ -41,4 +41,5 @@ with tab1:
 
 with tab2:
     st.subheader("매매 내역 분석")
+
     st.dataframe(df, use_container_width=True)
