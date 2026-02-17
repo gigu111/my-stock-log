@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 # 1. 본인의 구글 시트 주소를 여기에 넣으세요
-SHEET_URL = "hhttps://docs.google.com/spreadsheets/d/1r6t0szBZbrOf30CTjQLeGcs-ZX3R1qhDapsvJXbkg-Y/edit?gid=0#gid=0"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/1r6t0szBZbrOf30CTjQLeGcs-ZX3R1qhDapsvJXbkg-Y/edit?gid=0#gid=0"
 # 시트 데이터를 CSV로 변환하여 읽기 위한 주소 설정
 CSV_URL = SHEET_URL.replace("/edit#gid=", "/export?format=csv&gid=")
 
@@ -51,3 +51,4 @@ with tab2:
         st.dataframe(df, use_container_width=True)
     else:
         st.write("표시할 데이터가 없습니다.")
+
